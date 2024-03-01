@@ -6,11 +6,11 @@ namespace React.ExternalAPI.Server.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class HitterController : ControllerBase
+public class HittersController : ControllerBase
 {
 	private readonly HitterContext _context;
 
-	public HitterController(HitterContext context)
+	public HittersController(HitterContext context)
 	{
 		_context = context;
 	}
