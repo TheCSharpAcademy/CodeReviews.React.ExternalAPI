@@ -19,7 +19,7 @@ function App() {
     }
     if (hitters.length) {
         console.log(hitters[0])
-        return <img src={hitters[0].imageUrl} alt="juan soto"></img>
+        return <img src={hitters[0].imageUrl} alt="juan soto" />
     }
     return <></>
 }
