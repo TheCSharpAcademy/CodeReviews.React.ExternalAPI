@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using React.ExternalAPI.Server.Models;
 
 namespace React.ExternalAPI.Server.Controllers;
@@ -15,9 +16,17 @@ public class HitterController : ControllerBase
 	}
 
 	[HttpGet]
-	public ActionResult<IEnumerable<Hitter>> Get()
+	public async Task<ActionResult<IEnumerable<Hitter>>> GetHitters()
 	{
-		var hitters = _context.Hitters.ToList();
+		var hitters = await _context.Hitters.ToListAsync();
 		return Ok(hitters);
+	}
+
+	[HttpGet("{id}")]
+	public async Task<ActionResult<Hitter>> GetHitterById(int id)
+	{
+		var hitter = await _context.Hitters.FirstOrDefaultAsync(hitter => hitter.Id == id);
+		if (hitter == null) return NotFound();
+		return Ok(hitter);
 	}
 }
