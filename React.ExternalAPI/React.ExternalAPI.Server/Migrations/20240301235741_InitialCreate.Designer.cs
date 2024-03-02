@@ -11,7 +11,7 @@ using React.ExternalAPI.Server.Models;
 namespace React.ExternalAPI.Server.Migrations
 {
     [DbContext(typeof(HitterContext))]
-    [Migration("20240301194050_InitialCreate")]
+    [Migration("20240301235741_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,10 +35,18 @@ namespace React.ExternalAPI.Server.Migrations
                     b.Property<double>("BattingAverage")
                         .HasColumnType("float");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("HomeRuns")
                         .HasColumnType("int");
 
                     b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

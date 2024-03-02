@@ -16,6 +16,8 @@ namespace React.ExternalAPI.Server.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BattingAverage = table.Column<double>(type: "float", nullable: false),
                     HomeRuns = table.Column<int>(type: "int", nullable: false),

@@ -3,6 +3,8 @@
 public class Hitter
 {
 	public long Id { get; set; }
+	public string FirstName { get; set; }
+	public string LastName { get; set; }
 	public string ImageUrl { get; set; }
 	public double BattingAverage {  get; set; }
 	public int HomeRuns { get; set; }
