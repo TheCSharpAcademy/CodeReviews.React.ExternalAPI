@@ -18,11 +18,21 @@ function App() {
     if (isLoading) {
         return <p>Loading Data...</p>
     }
-    if (hitters.length) {
-        console.log(hitters[0])
-        return <img src={hitters[0].imageUrl} alt="juan soto" />
-    }
-    return <></>
+
+    return (
+        <Router>
+            <>
+                <h1>List of Best 2024 Baseball Hitters based on 2023 Stats</h1>
+                <ul>
+                    {hitters.map(hitter => {
+                        <li key={hitter.Id}>
+                            <Link to=`/api/hitters/${hitter.Id}`>{hitter.Name}</Link>
+                        </li>
+                    })}
+                </ul>
+            </>
+        </Router>
+    )
 }
 
 export default App;
