@@ -2,7 +2,6 @@ import React from "react";
 import {useParams} from "react-router-dom";
 import "./PokemonDetails.css"
 import Link from "@mui/material/Link";
-import PokemonList from "./PokemonList";
 
 function PokemonDetails({pokemonList}) {
 
