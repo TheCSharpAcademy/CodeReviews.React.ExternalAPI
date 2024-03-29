@@ -6,6 +6,11 @@ import Link from '@mui/material/Link';
 import "./PokemonList.css";
 
 function PokemonList({pokemonList}) {
+    
+    const listText = {
+        color: "white"
+    };
+    
     return (
         <div className="pokemon-list-container">
             <List dense={true}>
@@ -14,7 +19,10 @@ function PokemonList({pokemonList}) {
                         return (
                             <ListItem key={pokemon.id} class="pokemon-list">
                                 <Link href={`/pokemon/${pokemon.id}`} underline="hover" >
-                                    <ListItemText primary={pokemon.name} />
+                                    <ListItemText 
+                                        primary={pokemon.name}
+                                        primaryTypographyProps={{ style: listText }}
+                                    />
                                 </Link>
                             </ListItem>
                         )
