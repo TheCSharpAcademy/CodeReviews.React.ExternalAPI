@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="reactexternalapi.nathanjenner.client/ReactExternal.UI.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ReactExternalAPI.NathanJenner.Server/ReactExternal.API.csproj" />
+</Solution>

@@ -1,4 +1,4 @@
-** Install necesarry packages before running the project.
+ Install necesarry packages before running the project.
 
   npm install react-router-dom
   
