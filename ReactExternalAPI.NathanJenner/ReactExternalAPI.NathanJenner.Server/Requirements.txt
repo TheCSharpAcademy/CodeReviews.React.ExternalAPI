@@ -1,0 +1,85 @@
+Requirements:
+
+- This is an application where you should present data coming from a .NET WebAPI using React.
+- Your application can only have GET requests.
+- You cannot use AXIOS to fetch the data, you have to use JS Fetch API
+- You should create an API of your choice, with a model representing a single table.
+- One of the properties of your API's model should be imageUrl, with a link to pictures that will be shown by the react app.
+- You can choose whatever ORM you want: Dapper, EF, ADO.NET.
+- Your app needs to have a list of records and a page to visualise an individual record.
+- Your app should show a 'Loading Data...' message while the request hasn't been completed.
+- If there's a server error, the user should be informed.
+
+
+
+
+
+
+
+
+[
+  {
+    "id": 1,
+    "title": "Mountain Landscape",
+    "description": "A scenic mountain range at sunrise",
+    "imageUrl": "https://picsum.photos/id/1018/600/400",
+    "author": "Lorem Picsum",
+    "category": "Nature"
+  },
+  {
+    "id": 2,
+    "title": "City Skyline",
+    "description": "Modern city skyline at dusk",
+    "imageUrl": "https://picsum.photos/id/1015/600/400",
+    "author": "Lorem Picsum",
+    "category": "Urban"
+  },
+  {
+    "id": 3,
+    "title": "Forest Path",
+    "description": "A quiet path through a dense forest",
+    "imageUrl": "https://picsum.photos/id/1019/600/400",
+    "author": "Lorem Picsum",
+    "category": "Nature"
+  },
+  {
+    "id": 4,
+    "title": "Beach View",
+    "description": "Golden sand and clear blue water",
+    "imageUrl": "https://picsum.photos/id/1016/600/400",
+    "author": "Lorem Picsum",
+    "category": "Travel"
+  },
+  {
+    "id": 5,
+    "title": "Desert Road",
+    "description": "A long road through the desert",
+    "imageUrl": "https://picsum.photos/id/1002/600/400",
+    "author": "Lorem Picsum",
+    "category": "Travel"
+  },
+  {
+    "id": 6,
+    "title": "Snowy Mountains",
+    "description": "Snow-covered peaks under a clear sky",
+    "imageUrl": "https://picsum.photos/id/1003/600/400",
+    "author": "Lorem Picsum",
+    "category": "Nature"
+  },
+  {
+    "id": 7,
+    "title": "Calm Lake",
+    "description": "A mirror-like lake surrounded by trees",
+    "imageUrl": "https://picsum.photos/id/1011/600/400",
+    "author": "Lorem Picsum",
+    "category": "Nature"
+  },
+  {
+    "id": 8,
+    "title": "Urban Street",
+    "description": "A busy city street with people",
+    "imageUrl": "https://picsum.photos/id/1020/600/400",
+    "author": "Lorem Picsum",
+    "category": "Urban"
+  }
+]

@@ -1,0 +1,16 @@
+@ReactExternalAPI.NathanJenner.Server_HostAddress = https://localhost:7206
+
+GET {{ReactExternalAPI.NathanJenner.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{ReactExternalAPI.NathanJenner.Server_HostAddress}}/images/
+Accept: application/json
+
+###
+
+GET {{ReactExternalAPI.NathanJenner.Server_HostAddress}}/images/8
+Accept: application/json
+
+###
