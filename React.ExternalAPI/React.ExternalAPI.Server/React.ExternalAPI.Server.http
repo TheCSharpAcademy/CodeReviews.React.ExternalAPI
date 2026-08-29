@@ -1,6 +1,0 @@
-@React.ExternalAPI.Server_HostAddress = http://localhost:5007
-
-GET {{React.ExternalAPI.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

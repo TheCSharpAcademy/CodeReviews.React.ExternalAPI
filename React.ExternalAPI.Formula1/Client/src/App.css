@@ -1,0 +1,6 @@
+/* App-level layout — all component styles are in index.css */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

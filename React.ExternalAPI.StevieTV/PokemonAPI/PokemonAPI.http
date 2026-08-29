@@ -1,6 +1,0 @@
-@PokemonAPI_HostAddress = http://localhost:5020
-
-GET {{PokemonAPI_HostAddress}}/pokemon/
-Accept: application/json
-
-###

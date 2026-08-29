@@ -1,6 +1,0 @@
-@Path = /wizards
-
-GET {{HostAddress}}{{Path}}/
-Accept: application/json
-
-###
